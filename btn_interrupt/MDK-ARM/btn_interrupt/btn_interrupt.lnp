@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp.sp
+"btn_interrupt\startup_stm32f446xx.o"
+"btn_interrupt\main.o"
+"btn_interrupt\stm32f4xx_it.o"
+"btn_interrupt\stm32f4xx_hal_msp.o"
+"btn_interrupt\stm32f4xx_hal_tim.o"
+"btn_interrupt\stm32f4xx_hal_tim_ex.o"
+"btn_interrupt\stm32f4xx_hal_rcc.o"
+"btn_interrupt\stm32f4xx_hal_rcc_ex.o"
+"btn_interrupt\stm32f4xx_hal_flash.o"
+"btn_interrupt\stm32f4xx_hal_flash_ex.o"
+"btn_interrupt\stm32f4xx_hal_flash_ramfunc.o"
+"btn_interrupt\stm32f4xx_hal_gpio.o"
+"btn_interrupt\stm32f4xx_hal_dma_ex.o"
+"btn_interrupt\stm32f4xx_hal_dma.o"
+"btn_interrupt\stm32f4xx_hal_pwr.o"
+"btn_interrupt\stm32f4xx_hal_pwr_ex.o"
+"btn_interrupt\stm32f4xx_hal_cortex.o"
+"btn_interrupt\stm32f4xx_hal.o"
+"btn_interrupt\stm32f4xx_hal_exti.o"
+"btn_interrupt\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "btn_interrupt\btn_interrupt.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "btn_interrupt.map" -o btn_interrupt\btn_interrupt.axf
