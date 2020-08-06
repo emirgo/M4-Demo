@@ -126,7 +126,7 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 		// Voltage to digital value conversion
-		HAL_DAC_SetValue(&hdac, DAC_CHANNEL_1, DAC_ALIGN_12B_R, sine_val);
+		
 		/*
 		digitalValue = (uint32_t) outputVoltage*(0xfff+1)/3.3;
 		
